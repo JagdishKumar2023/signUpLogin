@@ -23,7 +23,6 @@ let handleSignup = (event) => {
     phone: telValue,
     email: emailValue,
     password: passValue,
-    confirmPassword: confirmPassValue,
   };
 
   if (
@@ -38,19 +37,19 @@ let handleSignup = (event) => {
     alert(`password and confirm password does not match`);
   } else {
     userSignupData.push(signUpData);
+    localStorage.setItem("userSignupData", JSON.stringify(userSignupData));
+
+    alert("signed up successfully");
+    nameInput.value = "";
+    telInput.value = "";
+    emailInput.value = "";
+    passInput.value = "";
+    confirmPassInput.value = "";
+
+    nameInput.focus();
   }
 
-  localStorage.setItem("userSignupData", JSON.stringify(userSignupData));
-
   //   console.log(userSignupData);
-
-  nameInput.value = "";
-  telInput.value = "";
-  emailInput.value = "";
-  passInput.value = "";
-  confirmPassInput.value = "";
-
-  nameInput.focus();
 };
 
 let signup_form = document.getElementById("handleSignup");
