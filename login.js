@@ -20,14 +20,16 @@ let handleLogin = (event) => {
     }
   });
 
-  if (user && user.password === passValue) {
-    alert("login successfull");
+  if (!user) {
+    alert("user does not exist");
+  } else if (user.password !== passValue) {
+    alert("password does not match");
+    passInput.focus();
+  } else {
+    alert("login successful");
     emailInput.value = "";
     passInput.value = "";
     emailInput.focus();
-  } else {
-    alert("please check your password");
-    passInput.focus();
   }
 };
 

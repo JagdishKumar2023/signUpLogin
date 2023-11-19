@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>login</title>
+    <!-- <link rel="stylesheet" href="./navbar.css" /> -->
+    <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
+    <div class="navbar"></div>
+    <h1>login</h1>
     <div class="container">
       <div class="login_form">
         <form id="handleLogin">
@@ -21,8 +25,16 @@
             placeholder="enter password"
             value=""
           />
-          <button type="submit">Login</button>
+          <button class="loginBtn" type="submit">Login</button>
         </form>
+      </div>
+      <div class="signup">
+        <p>
+          new user?
+          <span>
+            <a href="./index.html">Sign up</a>
+          </span>
+        </p>
       </div>
     </div>
   </body>

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign-up</title>
+    <link rel="stylesheet" href="./navbar.css" />
   </head>
   <body>
     <div class="container">
+      <div class="navbar">
+        <div class="left">
+          <h2>signup/login</h2>
+        </div>
+      </div>
+      <h1>signup</h1>
       <div class="sign_up_form">
         <form id="handleSignup">
           <input type="text" placeholder="enter your name" id="name" value="" />
@@ -29,11 +36,19 @@
             id="confirmPassInput"
             value=""
           />
-          <button type="submit">submit</button>
+          <button type="submit" class="submitBtn">signup</button>
         </form>
+      </div>
+      <div class="login">
+        <p>
+          Already haven an account?
+          <span>
+            <a href="./login.html">login</a>
+          </span>
+        </p>
       </div>
     </div>
   </body>
 </html>
 
-<script src="./script.js" type="module"></script>
+<script src="./signup.js" type="module"></script>

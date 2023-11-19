@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* border: 2px solid red; */
+  height: 670px;
+}
+
+.navbar {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(47, 68, 113);
+}
+
+.left > h2 {
+  font-size: 30px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.right > h2 {
+  font-size: 30px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+h1 {
+  /* border: 2px solid gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 40px;
+  font-size: 40px;
+  color: rgb(255, 0, 43);
+  text-decoration: double;
+}
+
+.sign_up_form {
+  /* border: 2px solid green; */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#handleSignup {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.submitBtn {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 20px;
+  cursor: pointer;
+  background: rgb(0, 124, 128);
+  width: 120px;
+  font-size: medium;
+  text-transform: capitalize;
+  color: white;
+}
+
+.loginBtn {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 20px;
+  cursor: pointer;
+  background: rgb(0, 124, 128);
+  width: 120px;
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+/* some doubt in hover */
+
+.submitBtn :hover {
+  /* border: 2px solid rgb(255, 0, 0); */
+  background-color: rgb(0, 255, 4);
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
