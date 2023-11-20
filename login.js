@@ -18,15 +18,16 @@ let handleLogin = (event) => {
     if (ele.email === emailValue) {
       return ele;
     }
+    410;
   });
 
   if (!user) {
-    alert("user does not exist");
+    alert("User does not exist");
   } else if (user.password !== passValue) {
-    alert("password does not match");
+    alert("Password does not match");
     passInput.focus();
   } else {
-    alert("login successful");
+    alert("Login successful");
     emailInput.value = "";
     passInput.value = "";
     emailInput.focus();

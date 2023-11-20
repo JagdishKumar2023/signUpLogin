@@ -32,9 +32,9 @@ let handleSignup = (event) => {
     !passValue ||
     !confirmPassValue
   ) {
-    alert(`pleasea fill the required fields`);
+    alert(`Please fill the required fields`);
   } else if (passValue !== confirmPassValue) {
-    alert(`password and confirm password does not match`);
+    alert(`Password and confirm password does not match`);
   } else {
     userSignupData.push(signUpData);
     localStorage.setItem("userSignupData", JSON.stringify(userSignupData));
